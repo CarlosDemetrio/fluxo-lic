@@ -1,6 +1,6 @@
 <template>
   <q-card class="main-card">
-    <q-card-section :class="bgColor" class=" text-white card-title flex justify-between">
+    <q-card-section :class="bgColor" class=" text-center text-white card-title flex justify-between  content-center">
       <span >{{ codigoSigaa }}</span>
       <q-separator class="q-mx-md" vertical color="dark-blue" size="2px" />
       <span > {{ creditos }}</span>
@@ -19,7 +19,7 @@ export default {
   name: 'cardDisciplina',
   data () {
     return {
-      bgColor: this.tipo === 'OPT' ? 'bg-grey' : this.siglaDepartamento === 'CIC' ? 'bg-primary' : this.siglaDepartamento === 'MAT' || this.siglaDepartamento === 'EST' ? 'bg-red' : this.siglaDepartamento === 'LIC' ? 'bg-teal' : 'bg-accent'
+      bgColor: this.siglaDepartamento === 'CIC' ? 'bg-primary' : this.siglaDepartamento === 'MAT' || this.siglaDepartamento === 'EST' ? 'bg-red' : this.siglaDepartamento === 'LIC' ? 'bg-teal' : 'bg-accent'
     }
   },
   props: {
@@ -35,11 +35,16 @@ export default {
 
 <style lang="scss">
   .main-card {
-    width: 16em;
+    width: 13em;
   }
   .content-card {
-    height: 7em;
-    font-size: 1em;
+    height: 6em;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .card-title {
+    font-size: 11px;
+    height: 20px
   }
 
 </style>
