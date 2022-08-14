@@ -2,6 +2,14 @@
 
 listagem de fluxo do curso de computacao da unb
 
+# Sinta se livre para contribuir ou alterar algo ;)
+
+# Você pode acessar este fluxo em
+```
+https://carlosdemetrio.github.io/#/
+```
+
+
 ## Install the dependencies
 ```bash
 yarn
